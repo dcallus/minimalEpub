@@ -6,3 +6,4 @@
 2. Clone the repo and run `yarn`.
 3. Run `npm start`.
 4. Scan the QR code in the terminal with Expo Go to launch the app.
+# minimalEpub
