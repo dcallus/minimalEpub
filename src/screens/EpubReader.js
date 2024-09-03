@@ -32,7 +32,7 @@ function EpubReader(props) {
 					onReady={() => {
 						console.log('cfi on ready = ', currentCfi)
 						// DISABLE LINE BELOW AND BUG DISSAPEARS
-						if (currentCfi != null)	goToLocation(currentCfi)
+						// if (currentCfi != null)	goToLocation(currentCfi)
 					}}
 
 				/>
