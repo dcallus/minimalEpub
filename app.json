@@ -1,0 +1,54 @@
+{
+	"expo": {
+		"name": "Minimal",
+		"slug": "minimal",
+		"version": "1.0.0",
+		"orientation": "portrait",
+		"icon": "./assets/icon.png",
+		"userInterfaceStyle": "light",
+		"splash": {
+			"image": "./assets/splash.png",
+			"resizeMode": "contain",
+			"backgroundColor": "#ffffff"
+		},
+		"assetBundlePatterns": ["**/*"],
+		"ios": {
+			"supportsTablet": true,
+			"UTTypeInfo": [
+				{
+					"UTTypeIdentifier": "application/epub+zip",
+					"UTTypeTagName": "EPUB",
+					"UTTypeDescription": "EPUB Book"
+				}
+			]
+		},
+		"android": {
+			"adaptiveIcon": {
+				"foregroundImage": "./assets/adaptive-icon.png",
+				"backgroundColor": "#ffffff"
+			},
+			"intent": {
+				"actions": ["android.intent.action.VIEW"],
+				"categories": ["android.intent.category.DEFAULT", "android.intent.category.BROWSABLE"],
+				"data": [
+					{
+						"scheme": "content",
+						"type": "application/epub+zip"
+					},
+					{
+						"scheme": "file",
+						"type": "application/epub+zip"
+					}
+				]
+			}
+		},
+		"web": {
+			"favicon": "./assets/favicon.png"
+		},
+		"extra": {
+			"eas": {
+				"projectId": "4cac04d4-3455-481d-bd88-fd488b1efc28"
+			}
+		}
+	}
+}
