@@ -9,9 +9,6 @@ function EpubReader(props) {
 	const { params: bookUri } = props.route;
 	const headerHeight = useHeaderHeight();
 
-	useEffect(() => {
-	}, [currentCfi])
-
 	const { currentCfi, setCurrentCfi } = useApp();
 	const { goToLocation } = useReader();
 
@@ -34,7 +31,8 @@ function EpubReader(props) {
 					onLocationChange={(_, loc) => changeLocation(loc)}
 					onReady={() => {
 						console.log('cfi on ready = ', currentCfi)
-						goToLocation(currentCfi)
+						// DISABLE LINE BELOW AND BUG DISSAPEARS
+						// if (currentCfi != null)	goToLocation(currentCfi)
 					}}
 
 				/>
