@@ -1,4 +1,4 @@
-# Fluenty
+# Minimal repo with broken pageLocation tracking
 
 ### Development
 
